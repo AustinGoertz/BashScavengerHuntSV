@@ -1,0 +1,6 @@
+To run the fuel program, we must use a python interpreter.
+Python is an interpreted language, which means it is read line by line.
+
+The command you want to run is: Python3 script_name.py
+
+Replace the script_name.py with the fuel_up.py

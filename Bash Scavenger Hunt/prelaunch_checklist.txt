@@ -1,0 +1,12 @@
+PRELAUNCH CHECKLIST:
+
+The directory structure is organized in its entirety.
+The ship has enough fuel to do significant exploration of our cosmos.
+
+This part of the game uses the c programming language to do something very similar to the Python part; You are not allowed to advance in the game until your directory structure is properly organized
+
+C is a compiled language, which means it is converted to an executable file, written in machine code.
+We then run the executable file to see if our code is working.
+
+This is a good time to discuss the different types of errors in programming;
+
