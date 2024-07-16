@@ -24,16 +24,16 @@ class Navigate {
         return numberOfFiles == 3;
     }
 
-    public static void writeBashScript(List<String> planets, String fileName) {
+    public static void writeCmdScript(List<String> planets, String fileName) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
-            writer.write("#!/bin/bash\n\n");
-            writer.write("# Create the main directory\n");
-            writer.write("mkdir -p Planets\n\n");
-    
+            writer.write("@echo off\n\n");
+            writer.write("rem Create the main directory\n");
+            writer.write("mkdir Planets\n\n");
+
             for (String planet : planets) {
-                writer.write("mkdir -p \"planets/" + planet + "\"\n");
+                writer.write("mkdir \"Planets\\" + planet + "\"\n");
                 if (planet.equals("TRAPPIST-1_f")) {
-                    writer.write("touch \"planets/TRAPPIST-1_f/correct.txt\"\n");
+                    writer.write("echo. > \"Planets\\TRAPPIST-1_f\\correct.txt\"\n");
                 }
             }
         } catch (IOException e) {
@@ -44,7 +44,7 @@ class Navigate {
     public static void writeCluesTxt() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("clues.txt"))) {
             writer.write("CLUE 1: The planet we are looking for is not in a part of the HD catalogue and was not discovered by the Kepler telescope.\n");
-            writer.write("       Recall that the \"-v\" flag with grep is used to negate a search, or in other words, asks the question \"what is everything that is not ...?\"\n\n");
+            writer.write("       Recall that the \"/V\" flag with findstr is used to negate a search, or in other words, asks the question \"what is everything that is not ...?\"\n\n");
             writer.write("CLUE 2: The planet we are looking for is the fifth planet away from its star. Think about what letter this will correspond to.\n\n");
             writer.write("CLUE 3: The planet we are looking was discovered by the TRAnsiting Planets and PlanetesImals Small Telescope. If you think you know which planet we are looking for, change the directory to this planet.\n");
         } catch (IOException e) {
@@ -116,17 +116,18 @@ class Navigate {
             );
 
             Collections.shuffle(planets);
-            writeBashScript(planets, "downloadPlanets.sh");
+            writeCmdScript(planets, "downloadPlanets.bat");
             writeCluesTxt();
 
             System.out.println();
-            System.out.println("Navigation Data Downloaded in current directory; please move downloadPlanets.sh and clues.txt to home directory.");
+            System.out.println("Navigation Data Downloaded in current directory; please move downloadPlanets.bat and clues.txt to home directory.");
             System.out.println("Now, you must give yourself permission to run this script. Recall the chmod command.");
-            System.out.println("Run the script by running ./downloadPlanets.sh");
+            System.out.println("Run the script by running downloadPlanets.bat");
             System.out.println("Navigate to the Earth directory in Planets for your first clue.");
             System.out.println();
         }
     }
 }
+
 
     
