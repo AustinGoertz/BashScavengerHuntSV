@@ -34,7 +34,7 @@ chmod u+x [file]: Make a file executable for the user.
 Compiling and Running:
 
 C:
-Compile: gcc [source_file.c] -o [output_file]
+Compile: gcc -mconsole [source_file.c] -o [output_file]
 Run: ./[output_file]
 
 Python:

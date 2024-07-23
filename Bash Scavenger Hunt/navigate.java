@@ -121,9 +121,8 @@ class Navigate {
 
             System.out.println();
             System.out.println("Navigation Data Downloaded in current directory; please move downloadPlanets.bat and clues.txt to home directory.");
-            System.out.println("Now, you must give yourself permission to run this script. Recall the chmod command.");
-            System.out.println("Run the script by running downloadPlanets.bat");
-            System.out.println("Navigate to the Earth directory in Planets for your first clue.");
+            System.out.println("Run the script by running downloadPlanets.bat")
+
             System.out.println();
         }
     }
