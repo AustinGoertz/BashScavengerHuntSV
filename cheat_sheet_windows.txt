@@ -1,0 +1,45 @@
+Navigation:
+cd [directory]: Change directory
+cd ..: Move up one directory
+dir: List files and directories (equivalent to ls in Bash)
+echo %cd%: Print current directory (equivalent to pwd in Bash)
+
+File Management:
+echo. > [filename]: Create an empty file
+mkdir [directory]: Create a directory
+del [file]: Remove a file
+rmdir /s /q [directory]: Remove a directory and its contents (use with caution!)
+File Manipulation:
+type [file]: Display the contents of a file (similar to cat in Bash)
+copy [source] [destination]: Copy a file or directory
+move [source] [destination]: Move or rename a file or directory
+
+Text Processing:
+findstr [pattern] [file]: Search for a string in a file (similar to grep in Bash)
+findstr /v [pattern] [file]: Inverse search, find lines not matching the pattern
+
+Permissions:
+icacls [file_or_folder] /grant [username]:F
+
+Compiling and Running:
+C/C++:
+
+Compile: cl [source_file.c]
+Run: [output_file.exe]
+
+Python:
+Run: python [script.py]
+
+Java:
+
+Compile: javac [source_file.java]
+Run: java [source_file.java] [COMMAND LINE ARGUMENTS]
+
+Miscellaneous:
+echo [text]: Print text to the terminal
+date /t: Display the current date (use /t for short format)
+help [command]: Display help information for a command
+notepad [filename]: Open a text file in Notepad (text editor)
+cls: Clear the terminal
+exit: Exit Command Prompt
+Piping: Windows uses | for piping commands, similar to Unix-like systems. Example: dir | find "txt".
