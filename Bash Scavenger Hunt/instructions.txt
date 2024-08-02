@@ -8,7 +8,8 @@ the launch, navigation, and execution of a spaceship's mission to inspect
 various nearby planets with the potential to support life. The game has a few
 tasks for you to complete:
 
-The game is to be played from its home directory titled "Bash Scavenger Hunt". Ensure that you are no further back in your filing system than this before executing any command. 
+The game is to be played from its home directory titled "Bash Scavenger Hunt". 
+Ensure that you are no further back in your filing system than this before executing any command. 
 
 Task 1:
 
