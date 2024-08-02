@@ -1,14 +1,7 @@
 Now that we have the probe in space, we must begin to navigate our galaxy.
-This program will generate a directory titled Planets which will contain a
-list of folders titled by planet names, which is usually a
-a string of letters and numbers that is not so easy to understand. Upon
-execution of this script, we will get our first clue as to which planet to explore.
-There are too many planets in our folder to search each folder manually for a clue, and
-even then, it may not be so obvious how to extract or read the clue.
+This program will generate a bash script that makes a directory titled Planets which will contain a list of folders titled by planet names, which is usually a string of letters and numbers that is not so easy to understand. Upon execution of this script, we will get our first clue as to which planet to explore. There are too many planets in our folder to search each folder manually for a clue, and even then, it may not be so obvious how to extract or read the clue.
 
-Below is a direct quote from NASA's website on planet naming conventions.
-
-
+Below is a direct quote from NASA's website on planet naming conventions. We will use this to filter the list of planets.
 
 Let’s use HD 189733 b (a blue-ish planet where it may rain glass sideways) as an example. 
 The first part of the name is usually the telescope or survey that found it. In this case "HD" 
@@ -17,15 +10,18 @@ order in which the star was catalogued by position (the 189,733rd star added to 
 
 The lowercase letter "b" stands for the planet, in the order in which the planet was found. The 
 first planet found is always named b, with ensuing planets named c, d, e, f and so on. The star 
-that the exoplanet orbits is usually the undeclared "A" of the system, which can be useful if the 
-system contains multiple stars, which themselves may be designated B, C. (Stars are designated with 
-capital letters; planets receive lowercase designations.) If a bunch of exoplanets around the same 
-star are found at once, the planet closest to its star is named b with more distant planets named c, d, e 
-and so on.
+that the exoplanet orbits is usually the undeclared "A" of the system, which can be useful if the system contains multiple stars, which themselves may be designated B, C. (Stars are designated with capital letters; planets receive lowercase designations.) If a bunch of exoplanets around the same star are found at once, the planet closest to its star is named b with more distant planets named c, d, e and so on.
 
-In recent years, the International Astronomical Union, the international authority for the naming of 
-celestial objects, has started the process of adopting proper names for exoplanets. The first batch of named 
-exoplanets came from a contest open to the public, and included about 15 stars and 20 exoplanets. From the 
-contest, the first giant exoplanet discovered in 1995 (51 Peg b) was named "Dimidium" and its host star (51 Peg) 
-"Helvetios."
+In recent years, the International Astronomical Union, the international authority for the naming of celestial objects, has started the process of adopting proper names for exoplanets. The first batch of named exoplanets came from a contest open to the public, and included about 15 stars and 20 exoplanets. From the contest, the first giant exoplanet discovered in 1995 (51 Peg b) was named "Dimidium" and its host star (51 Peg) "Helvetios."
+
+
+To compile the java code, we run javac filename.java. Replace filename with the name of the code.
+
+To execute the code, run java filename.java. Similarly, we should replace filename with the name of our file.
+
+On this command to execute, the program expects two command line arguments containing the directory with the fuel data and the directory with the launch data. Command line arguments are simply the inputs to the code. The final command will look something like this:
+
+java filename.java "path\to\fuel\directory" "path\to\launch\directory"
+
+
 

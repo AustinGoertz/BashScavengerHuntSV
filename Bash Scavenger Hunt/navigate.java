@@ -121,8 +121,9 @@ class Navigate {
 
             System.out.println();
             System.out.println("Navigation Data Downloaded in current directory; please move downloadPlanets.bat and clues.txt to home directory.");
-            System.out.println("Run the script by running downloadPlanets.bat")
-
+            System.out.println("Once this is done, run the script by running ./downloadPlanets.bat");
+            System.out.println("Ensure you open navigate.txt to learn how to read the clues.");
+            System.out.println("Concatenate (using cat) clues.txt for your first clue. Read task 3 in instructions for more details.");
             System.out.println();
         }
     }
